@@ -15,5 +15,5 @@ Output: 4
 */
 
 
-*/
+
 const singleNumber = nums => nums.reduce((acc, cur) => (acc ^ cur));
