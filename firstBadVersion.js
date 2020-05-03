@@ -50,4 +50,4 @@ var solution = function(isBadVersion) {
 };
 
 
-/* Way to solve this code is by binary search and finding the middle point L + Math.floor{R-L}/2 and iterating.
+/* Solve this code by binary search and finding the middle point L + Math.floor{R-L}/2 and iterating.
