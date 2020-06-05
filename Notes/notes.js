@@ -38,12 +38,19 @@ console.log(months);
 
 /*****    *******/
  var arr = ["a", "b", "c"];
- 
+
  arr.push("d")
  console.log(arr);
 
  console.log(arr.pop());
  
+ var arr2 = ["g", "r"];
+ console.log(arr.concat(arr2));
+ console.log(arr2);
+
+ console.log(arr.join("!"));
+
+ console.log(arr.reverse();)
 
 
 
