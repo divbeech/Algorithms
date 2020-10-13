@@ -33,5 +33,12 @@ In the example above, if we want to search the value 5, since there is no node w
  * @return {TreeNode}
  */
 var searchBST = function(root, val) {
-    
+    if (!root) return null;
+    while (root){
+        if (root.val===val) return root;
+        else if(root.val>val) root=root.left;
+        else root=root.right;
+
+    }
+    return null
 };
