@@ -7,3 +7,16 @@ function findNemo(array){
     }
 }
 findNemo(nemo);
+
+// Time complexity 
+ function funChallenge(input){
+     let a = 10;
+     a = 50 + 3;
+
+     for (let i = 0; i<input.lengthl; i++){
+         anotherFunction();
+         let stranger = true;
+         a++;
+     }
+     return a;
+ } // O(1) + O(n)
