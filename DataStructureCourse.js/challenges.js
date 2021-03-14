@@ -21,13 +21,27 @@
 //      return a;
 //  } // O(1) + O(n)
 
- function compressBoxesTwice(boxes){
-     boxes.forEach(function(boxes){
-         console.log(boxes);
-     });
-     boxes.forEach(function(boxes){
-         console.log(boxes);
-     });
- }
+//  function compressBoxesTwice(boxes){
+//      boxes.forEach(function(boxes){
+//          console.log(boxes);
+//      });
+//      boxes.forEach(function(boxes){
+//          console.log(boxes);
+//      });
+//  }
 
  // O(n)
+
+ // Log all pairs of array - Nested loop is O(n^2)
+ const boxes = ["a", "b", "c", "d", "e"];
+ function pairs(array){
+     for (let i = 0; i < array.length; i++){
+         for (let j = 0; j <array.length; j++){
+             console.log(array[i] , array[j])
+         }
+     }
+
+ }
+ pairs(boxes)
+
+ // 
