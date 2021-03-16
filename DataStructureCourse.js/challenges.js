@@ -32,16 +32,39 @@
 
  // O(n)
 
- // Log all pairs of array - Nested loop is O(n^2)
- const boxes = [1,2, 3];
- function pairs(array){
-     for (let i = 0; i < array.length; i++){
-         for (let j = 0; j <array.length; j++){
-             console.log(array[i] + array[j])
-         }
-     }
+//  // Log all pairs of array - Nested loop is O(n^2)
+//  const boxes = [1,2, 3];
+//  function pairs(array){
+//      for (let i = 0; i < array.length; i++){
+//          for (let j = 0; j <array.length; j++){
+//              console.log(array[i] + array[j] )
+             
+//          }
+//      }
 
- }
- pairs(boxes)
+//  }
+//  pairs(boxes)
 
- // 
+//  // 
+
+const twoSum = (numbers, target) => {
+    const sorted = numbers.sort((a, b) => a - b);
+    // Try to solve with two pointers approach
+    let left = 0;
+    let right = numbers.length -1;
+    
+    while (left < right){
+    if (numbers[left] + numbers[right] === target){
+      return [left, right]
+    }
+    else if (numbers[left] + numbers[right] > target){
+       right--
+    }
+      else if (numbers[left] + numbers[right] < target){
+        left++
+      }
+    }
+    return -1
+  }
+    console.log(twoSum([3,5,6,7], 14))
+  
