@@ -47,24 +47,40 @@
 
 //  // 
 
-const twoSum = (numbers, target) => {
-    const sorted = numbers.sort((a, b) => a - b);
-    // Try to solve with two pointers approach
-    let left = 0;
-    let right = numbers.length -1;
+// const twoSum = (numbers, target) => {
+//     const sorted = numbers.sort((a, b) => a - b);
+//     // Try to solve with two pointers approach
+//     let left = 0;
+//     let right = numbers.length -1;
     
-    while (left < right){
-    if (numbers[left] + numbers[right] === target){
-      return [left, right]
-    }
-    else if (numbers[left] + numbers[right] > target){
-       right--
-    }
-      else if (numbers[left] + numbers[right] < target){
-        left++
+//     while (left < right){
+//     if (numbers[left] + numbers[right] === target){
+//       return [left, right]
+//     }
+//     else if (numbers[left] + numbers[right] > target){
+//        right--
+//     }
+//       else if (numbers[left] + numbers[right] < target){
+//         left++
+//       }
+//     }
+//     return -1
+//   }
+//     console.log(twoSum([3,5,6,7], 14))
+
+
+/*  Compare Two arrays 0(n^2)*/
+const array1 = ['a', 'b', 'c', 'x'];
+const array2 = ['z', 'y', 'c'];
+
+function commonItems(arr1, arr2){
+  for (let i = 0; i < arr1.length; i++){
+    for (let j = 0; j <arr2.length; j++){
+      if(arr1[i] === arr2[j]){
+        return true;
       }
     }
-    return -1
   }
-    console.log(twoSum([3,5,6,7], 14))
-  
+  return false;
+}
+commonItems(array1, array2)
