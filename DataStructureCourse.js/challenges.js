@@ -69,18 +69,59 @@
 //     console.log(twoSum([3,5,6,7], 14))
 
 
-/*  Compare Two arrays 0(n^2)*/
-const array1 = ['a', 'b', 'c', 'x'];
-const array2 = ['z', 'y', 'c'];
+// /*  Compare Two arrays 0(n^2)*/
+// const array1 = ['a', 'b', 'c', 'x'];
+// const array2 = ['z', 'y', 'c'];
 
-function commonItems(arr1, arr2){
-  for (let i = 0; i < arr1.length; i++){
-    for (let j = 0; j <arr2.length; j++){
-      if(arr1[i] === arr2[j]){
-        return true;
-      }
-    }
-  }
-  return false;
-}
-commonItems(array1, array2)
+// function commonItems(arr1, arr2){
+//   for (let i = 0; i < arr1.length; i++){
+//     for (let j = 0; j <arr2.length; j++){
+//       if(arr1[i] === arr2[j]){
+//         return true;
+//       }
+//     }
+//   }
+//   return false;
+// }
+// commonItems(array1, array2)
+
+// function commonItems(arr1, arr2){
+//     let map = {};
+//     for (let i = 0; i < arr1.length; i++){
+//       if(!map[array1[i]]){
+//         const item = arr1[i];
+//         map[item] = true;    
+//         }
+//     }
+//     // console.log(map)
+//     for (let j = 0; j < arr2.length; j++){
+//       if (map[arr2[j]]){
+//         return true;
+//       }
+//     }
+//     return false
+//   }
+//   commonItems(array1, array2)
+
+const strings = ["a", "b", "c", "d"];
+strings[2]
+// push - add something at the end of the array
+strings.push('e') //O(1)
+
+
+// POP - REMOVE Last item from the array
+strings.pop('e') // 
+
+// add the item beginning of the array 
+
+strings.unshift('x')
+
+// remove item beginning of the arrau
+
+strings.shift('x')
+
+// Splice - add something in the middle
+strings.splice(2, 0, "alien")
+
+console.log(strings)
+
