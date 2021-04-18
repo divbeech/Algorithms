@@ -145,5 +145,6 @@ if (reverse === word){
     console.log(word + " is a palindrom")
 }
 else{
-    console.log( word "isnt a palindrome")
+    console.log( word + "isn't a palindrome")
 }
+
