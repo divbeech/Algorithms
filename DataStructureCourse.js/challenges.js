@@ -101,27 +101,49 @@
 //     }
 //     return false
 //   }
-//   commonItems(array1, array2)
+// //   commonItems(array1, array2)
 
-const strings = ["a", "b", "c", "d"];
-strings[2]
-// push - add something at the end of the array
-strings.push('e') //O(1)
+// const strings = ["a", "b", "c", "d"];
+// strings[2]
+// // push - add something at the end of the array
+// strings.push('e') //O(1)
 
 
-// POP - REMOVE Last item from the array
-strings.pop('e') // 
+// // POP - REMOVE Last item from the array
+// strings.pop('e') // 
 
-// add the item beginning of the array 
+// // add the item beginning of the array 
 
-strings.unshift('x')
+// strings.unshift('x')
 
-// remove item beginning of the arrau
+// // remove item beginning of the arrau
 
-strings.shift('x')
+// strings.shift('x')
 
-// Splice - add something in the middle
-strings.splice(2, 0, "alien")
+// // Splice - add something in the middle
+// strings.splice(2, 0, "alien")
 
-console.log(strings)
+// console.log(strings)
 
+/* Stacks ! */
+var letters = []; // this is our stack
+var word = "racecar"
+var reverse= "";
+
+// put letters of word into stack
+
+for (var i = 0; i < word.length; i++){
+    letters.push(word[i])
+}
+
+// pop off the stack in reverse order
+for (var i =0; i < word.length; i++){
+    reverse += letters.pop();
+}
+
+if (reverse === word){
+    console.log(word + " is a palindrom")
+}
+else{
+    console.log( word "isnt a palindrome")
+}
