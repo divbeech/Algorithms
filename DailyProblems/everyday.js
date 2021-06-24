@@ -8,13 +8,15 @@ function reverse(str){
     console.log(reverse("hello world"))
 
 //Palindrome
-var isPalindrome = function(s) {
-    let word = s.split('');
-    let reverse = word.reverse();
-    if (word === reverse){
-        return true
-    }
-    else{
-        return false
-    }
-};
+function isPalindrome(string) {
+	let left = 0;
+	let right = string.length-1;
+	while (left < right){
+		if(string[left]!==string[right])
+			return false
+			left++;
+			right--
+		
+	}
+	return true;
+}
