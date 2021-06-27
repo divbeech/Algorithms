@@ -11,6 +11,7 @@ function reverse(str){
 function isPalindrome(string) {
 	let left = 0;
 	let right = string.length-1;
+    string = string.replace(/[^0-9A-Za-z]/g,'').toLowerCase();
 	while (left < right){
 		if(string[left]!==string[right])
 			return false
