@@ -43,3 +43,23 @@ var judgeCircle = function(moves) {
     return UD===0 && LR===0;
     
 };
+
+// Detect Capitalization # 520
+var detectCapitalUse = function(word) {
+    let count = 0;
+    for (let i = 0; i<word.length; i++){
+        const letter = word[i];
+        if (letter===letter.toUpperCase()){
+
+            count += 1;
+            }        
+    }     
+        
+  return (
+      count === word.length || // Checks if all the letters are capital
+        count === 0 || // checks if the 1st letter is capital
+        (word[0] === word[0].toUpperCase() && count === 1)
+      );
+    
+};
+
