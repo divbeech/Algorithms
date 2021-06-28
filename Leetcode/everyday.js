@@ -57,8 +57,8 @@ var detectCapitalUse = function(word) {
         
   return (
       count === word.length || // Checks if all the letters are capital
-        count === 0 || // checks if the 1st letter is capital
-        (word[0] === word[0].toUpperCase() && count === 1)
+        count === 0 || // checks if all the letters are lower case
+        (word[0] === word[0].toUpperCase() && count === 1) // check if the 1st letter & only that letter is capital
       );
     
 };
